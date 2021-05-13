@@ -4,7 +4,7 @@ def donustur(liste):
     yeniListe = []
     for i in liste:
         if type(i) == list:
-            yeniListe.extend(donustur(i)) # öz yinemeli fonksiyon
+            yeniListe.extend(donustur(i)) # Özyineleme fonksiyon
         else:
             yeniListe.append(i)
     return yeniListe
